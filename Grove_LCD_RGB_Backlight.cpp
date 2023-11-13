@@ -156,7 +156,7 @@ void Grove_LCD_RGB_Backlight::home()
     wait_us(2000);        // this command takes a long time!
 }
 
-void Grove_LCD_RGB_Backlight::setCursor(uint8_t col, uint8_t row)
+void Grove_LCD_RGB_Backlight::locate(uint8_t col, uint8_t row)
 {
 
     col = (row == 0 ? col|0x80 : col|0xc0);
