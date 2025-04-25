@@ -44,7 +44,7 @@ Grove_LCD_RGB_Backlight::Grove_LCD_RGB_Backlight(PinName sda, PinName scl) : i2c
  
    //Wait for more than 30 ms after power rises above 4.5V per the data sheet
    // wait_ms(50);
-  wait_ms(50);
+  wait_us(50000);
  
  
     // Send first function set command. Wait longer that 39 us per the data sheet
